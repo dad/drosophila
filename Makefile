@@ -1,0 +1,3 @@
+all:
+	python make-drosophila-alignments.py dmel '((((((dmel,(dsim,dsec)),(dere,dyak)),dana),(dpse,dper)),dwil),((dmoj,dvir),dgri));' ~/research/data/drosophila/all_species.guide_tree.translation ~/research/data/drosophila/frb.GLEANR.TEremoved.clusters.tsv ~/research/data/drosophila/flybase-id-mapping.txt ~/research/data/drosophila/drosophila-alignments.p ~/research/data/drosophila/drosophila-orthologs.p
+	python make-drosophila-alignments.py dmel '(dmel,dyak);' ~/research/data/drosophila/all_species.guide_tree.translation ~/research/data/drosophila/frb.GLEANR.TEremoved.clusters.tsv ~/research/data/drosophila/flybase-id-mapping.txt ~/research/data/drosophila/dmel-dyak-alignments.p ~/research/data/drosophila/dmel-dyak-orthologs.p

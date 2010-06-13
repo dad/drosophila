@@ -1,0 +1,2 @@
+# From ftp://ftp.flybase.net/genomes/12_species_analysis/clark_eisen/alignments/README_coding_gene_alignments.txt
+((((((dmel,(dsim,dsec)),(dere,dyak)),dana),(dpse,dper)),dwil),((dmoj,dvir),dgri));
