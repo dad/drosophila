@@ -1,0 +1,12 @@
+dmel	dmel-coding-full.nt
+dsim	dsim.cds.fasta
+dsec	dsec.cds.fasta
+dere	dere.cds.fasta
+dyak	dyak.cds.fasta
+dana	dana.cds.fasta
+dmoj	dmoj.cds.fasta
+dgri	dgri.cds.fasta
+dwil	dwil.cds.fasta
+dpse	dpse.cds.fasta
+dper	dper.cds.fasta
+dvir	dvir.cds.fasta
