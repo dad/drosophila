@@ -2,6 +2,7 @@
 
 import sys, os, math, string, random, pickle
 import stats, biofile, newick
+from optparse import OptionParser
 
 def readORFs(fname):
 	orfs = []
@@ -45,13 +46,21 @@ def readOneToOneOrthologs(fname, master_spec, tree_species):
 if __name__ == "__main__":
 	# Goal: turn directory of files into alignments
 	# (al_len, spec_orf_pairs, aligned_prots) = alignment_dict[orf]
-	master_spec = sys.argv[1]
-	tree_fname = sys.argv[2]
-	in_dir = os.path.expanduser(sys.argv[3])
-	ortholog_fname = os.path.expanduser(sys.argv[4])
-	id_map_fname = os.path.expanduser(sys.argv[5])
-	alignment_out_fname = os.path.expanduser(sys.argv[6])
-	ortholog_out_fname = os.path.expanduser(sys.argv[7])
+
+
+	parser = OptionParser(usage="%prog [options] <conservation type> <master species> <map file linking species ID to FASTA ORFeome> " + \
+						  "<base directory for FASTA ORFeome> <FASTA ID format> <alignment pickle file> <Newick tree for amino-acid conservation>" + \
+						  "<Newick tree for codon conservation>")
+	parser.add_option("-n", "--n", dest="num_to_align", type="int", default=None, help="how many alignments to produce")
+	(options, args) = parser.parse_args()
+									
+	master_spec = args[0]
+	tree_fname = args[1]
+	in_dir = os.path.expanduser(args[2])
+	ortholog_fname = os.path.expanduser(args[3])
+	id_map_fname = os.path.expanduser(args[4])
+	alignment_out_fname = os.path.expanduser(args[5])
+	ortholog_out_fname = os.path.expanduser(args[6])
 
 	# Get tree
 	if os.path.isfile(tree_fname):
@@ -73,13 +82,14 @@ if __name__ == "__main__":
 	id_map = readFlybaseMapping(id_map_fname)
 	ortho_dict = readOneToOneOrthologs(ortholog_fname, master_spec, tree_species)
 	print "# Found %d 1:1 ortholog sets" % len(ortho_dict.keys())
-	
+
+	n_to_align = min(len(orfs), options.num_to_align)
 	alignment_dict = {}
 	ortholog_dict = {}
 	n_written = 0
 	n_failed = 0
 	n_duplicates = 0
-	for trans_id in orfs:
+	for trans_id in orfs[0:n_to_align]:
 		fname = os.path.join(in_dir,'%s.fasta' % trans_id)
 		orf_alignment_dict = biofile.readFASTADict(fname)
 		try:
