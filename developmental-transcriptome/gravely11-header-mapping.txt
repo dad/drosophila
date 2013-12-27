@@ -1,35 +1,35 @@
-new.id	orig.id
-gene	Gene
-chr	Chromosome
-start	Start
-stop	Stop
-E0.2	0-2 hr embryos
-E2.4	2-4 hr embryos
-E4.6	4-6 hr embryos
-E6.8	6-8 hr embryos
-E8.10	8-10 hr embryos
-E10.12	10-12 hr embryos
-E12.14	12-14 hr embryos
-E14.16	14-16 hr embryos
-E16.18	16-18 hr embryos
-E18.20	18-20 hr embryos
-E20.22	20-22 hr embryos
-E22.24	22-24 hr embryos
-L1	L1 larvae
-L2	L2 larvae
-L3.12	L3 larvae, 12 hr post-molt
-L3.darkblue	L3 larvae, dark blue gut PS(1-2)
-L3.lightblue	L3 larvae, light blue gut PS(3-6)
-L3.clear	L3 larvae, clear gut PS (7-9)
-WPP	WPP
-WPP.12	WPP + 12 hr
-WPP.24	WPP + 24 hr
-P.2	pupae, WPP + 2 days
-P.3	pupae, WPP + 3 days
-P.4	pupae, WPP + 4 days
-M.1	adult male, eclosion + 1 day
-M.5	adult male, eclosion + 5 days
-M.30	adult male, eclosion + 30 days
-F.1	adult female, eclosion + 1 day
-F.5	adult female, eclosion + 5 days
-F.30	adult female, eclosion + 30 days
+group	new.id	orig.id
+NA	gene	Gene
+NA	chr	Chromosome
+NA	start	Start
+NA	stop	Stop
+E	E0.2	0-2 hr embryos
+E	E2.4	2-4 hr embryos
+E	E4.6	4-6 hr embryos
+E	E6.8	6-8 hr embryos
+E	E8.10	8-10 hr embryos
+E	E10.12	10-12 hr embryos
+E	E12.14	12-14 hr embryos
+E	E14.16	14-16 hr embryos
+E	E16.18	16-18 hr embryos
+E	E18.20	18-20 hr embryos
+E	E20.22	20-22 hr embryos
+E	E22.24	22-24 hr embryos
+L	L1	L1 larvae
+L	L2	L2 larvae
+L	L3.12	L3 larvae, 12 hr post-molt
+L	L3.darkblue	L3 larvae, dark blue gut PS(1-2)
+L	L3.lightblue	L3 larvae, light blue gut PS(3-6)
+L	L3.clear	L3 larvae, clear gut PS (7-9)
+PP	WPP	WPP
+PP	WPP.12	WPP + 12 hr
+PP	WPP.24	WPP + 24 hr
+P	P.2	pupae, WPP + 2 days
+P	P.3	pupae, WPP + 3 days
+P	P.4	pupae, WPP + 4 days
+A	M.1	adult male, eclosion + 1 day
+A	M.5	adult male, eclosion + 5 days
+A	M.30	adult male, eclosion + 30 days
+A	F.1	adult female, eclosion + 1 day
+A	F.5	adult female, eclosion + 5 days
+A	F.30	adult female, eclosion + 30 days
