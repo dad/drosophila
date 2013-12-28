@@ -21,9 +21,9 @@ L	L3.12	L3 larvae, 12 hr post-molt
 L	L3.darkblue	L3 larvae, dark blue gut PS(1-2)
 L	L3.lightblue	L3 larvae, light blue gut PS(3-6)
 L	L3.clear	L3 larvae, clear gut PS (7-9)
-PP	WPP	WPP
-PP	WPP.12	WPP + 12 hr
-PP	WPP.24	WPP + 24 hr
+P	WPP	WPP
+P	WPP.12	WPP + 12 hr
+P	WPP.24	WPP + 24 hr
 P	P.2	pupae, WPP + 2 days
 P	P.3	pupae, WPP + 3 days
 P	P.4	pupae, WPP + 4 days
